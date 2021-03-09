@@ -23,7 +23,7 @@ h3 {
 }
 .cup {
     background-color: #fff;
-    border: 4px solid blue;
+    border: 2px solid blue;
     border-radius: 0 0 40px 40px;
     color: blue;
     height: 330px;
@@ -32,4 +32,58 @@ h3 {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+.cup.cup-small {
+    height: 95px;
+    width: 50px;
+    border-radius: 0 0 15px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    /* align-items: center; */
+    justify-content: center;
+    transition: 0.3s ease;
+    margin: 5px;
+}
+.cup.cup-small.full{
+    background-color:#73baf5;
+    color: #fff;
+}
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    align-items: center;
+    justify-content: center;
+}
+.remained {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s ease;
+
+}
+.remained span {
+    font-size: 20px;
+    font-weight: bold;
+}
+.remained small {
+    font-size: 12px;
+}
+.percentage {
+    background-color: #73baf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 0;
+    transition: 0.3s ease;
+}
+.text {
+    text-align: center;
+    
 }
